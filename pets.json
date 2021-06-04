@@ -113,5 +113,25 @@
     "github": "benaadams",
     "instagram": "",
     "twitter": "ben_a_adams"
-  }
+  },
+  {
+    "name": "Queso",
+    "jobTitle": "Management overhead",
+    "img": "https://user-images.githubusercontent.com/16246502/120871424-72434980-c550-11eb-9996-6188f78e83ea.png",
+    "description": "",
+    "caregiver": "Kevin Pilch",
+    "github": "Pilchie",
+    "instagram": "k.pilchie",
+    "twitter": "Pilchie"
+  },
+  {
+    "name": "Tucker",
+    "jobTitle": "Management overhead",
+    "img": "https://user-images.githubusercontent.com/16246502/120871579-d960fe00-c550-11eb-928f-03fa1a85a7c9.png",
+    "description": "",
+    "caregiver": "Kevin Pilch",
+    "github": "Pilchie",
+    "instagram": "k.pilchie",
+    "twitter": "Pilchie"
+  }  
 ]
