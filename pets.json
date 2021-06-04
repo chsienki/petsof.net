@@ -62,7 +62,7 @@
   {
     "name": "Oliver",
     "jobTitle": "CTO",
-    "img": "",
+    "img": "https://user-images.githubusercontent.com/1142958/120866444-dc2b1580-c587-11eb-983b-bd7c94d402fd.jpeg",
     "description": "",
     "caregiver": "Ben Adams",
     "github": "benaadams",
@@ -73,7 +73,7 @@
     "name": "Boris",
     "jobTitle": "CTO",
     "img": "",
-    "description": "",
+    "description": "https://user-images.githubusercontent.com/1142958/120866549-1694b280-c588-11eb-92de-546e343b85ad.jpeg",
     "caregiver": "Ben Adams",
     "github": "benaadams",
     "instagram": "",
