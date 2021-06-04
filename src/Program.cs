@@ -30,6 +30,9 @@ async static Task<IEnumerable<Pet>> makeBase64Encoded(IEnumerable<Pet> pets)
         catch(Exception e)
         {
             Console.WriteLine("Couldn't add pet "+pet.name+". Error was "+e.ToString());
+        }
+        finally
+        {
             b64Pets.Add(pet with { img = "data:image/jpeg;base64," + b64 });
         }
     }
