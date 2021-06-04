@@ -18,5 +18,15 @@
     "github": "chsienki",
     "instagram": "brotherlucca",
     "twitter": ""
+  },
+  {
+    "name": "Sam",
+    "jobTitle": "Libraries Engineer",
+    "img": "https://github.com/danmoseley/petsof.net/blob/main/sam.jpg",
+    "description": "Ruff",
+    "caregiver": "Dan Moseley",
+    "github": "danmoseley",
+    "instagram": "",
+    "twitter": ""
   }
 ]
