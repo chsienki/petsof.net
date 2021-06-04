@@ -27,8 +27,9 @@ async static Task<IEnumerable<Pet>> makeBase64Encoded(IEnumerable<Pet> pets)
             var imgData = await client.GetAsync(pet.img);
             b64 = Convert.ToBase64String(await imgData.Content.ReadAsByteArrayAsync());
         }
-        finally
+        catch(Exception e)
         {
+            Console.WriteLine("Couldn't add pet "+pet.name+". Error was "+e.ToString());
             b64Pets.Add(pet with { img = "data:image/jpeg;base64," + b64 });
         }
     }

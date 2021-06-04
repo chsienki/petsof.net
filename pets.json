@@ -107,8 +107,8 @@
   {
     "name": "Boris",
     "jobTitle": "SR Engineer",
-    "img": "",
-    "description": "https://user-images.githubusercontent.com/1142958/120866549-1694b280-c588-11eb-92de-546e343b85ad.jpeg",
+    "img": "https://user-images.githubusercontent.com/1142958/120866549-1694b280-c588-11eb-92de-546e343b85ad.jpeg",
+    "description": "",
     "caregiver": "Ben Adams",
     "github": "benaadams",
     "instagram": "",
