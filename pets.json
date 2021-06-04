@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Clifford",
+    "jobTitle": "Compiler Engineer",
+    "img": "https://scontent-sea1-1.cdninstagram.com/v/t51.2885-19/s150x150/49843685_2265536126811862_7304855354557333504_n.jpg?tp=1&_nc_ht=scontent-sea1-1.cdninstagram.com&_nc_ohc=knnTe-B_WuEAX8Gibgm&edm=ABfd0MgBAAAA&ccb=7-4&oh=9d7fbdaa6afe6d071df34c4bb26b4ed2&oe=60BE272F&_nc_sid=7bff83",
+    "description" : "",
+    "caregiver" : "Chris Sienkiewicz",
+    "github" : "chsienki",
+    "instagram" : "cliffordthebigredrescue",
+    "twitter": "" 
+  },
+  {
+    "name": "Lucca",
+    "jobTitle": "Compiler Engineer",
+    "img": "https://scontent-sea1-1.cdninstagram.com/v/t51.2885-15/e35/c0.180.1440.1440a/s480x480/153303614_880961866078247_1684259424349414387_n.jpg?tp=1&_nc_ht=scontent-sea1-1.cdninstagram.com&_nc_cat=111&_nc_ohc=P9dDn2zjut4AX_pl3Kg&edm=ABfd0MgBAAAA&ccb=7-4&oh=c941372a35da73b5cb49d589704b5365&oe=60BD5FCF&_nc_sid=7bff83",
+    "description": "",
+    "caregiver": "Chris Sienkiewicz",
+    "github": "chsienki",
+    "instagram": "brotherlucca",
+    "twitter": ""
+  }
+]

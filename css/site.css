@@ -36,14 +36,14 @@ html, body {
     align-content: center;
 }
 
-.site {
+.pet {
     margin-left: 1.0em;
     margin-right: 1.0em;
     margin-top: 0.5em;
     margin-bottom: 0.5em;
 }
  
-.site img {
+.pet img {
     width: 65px;
     height: 65px;
 }
@@ -62,7 +62,7 @@ html, body {
         flex-wrap: wrap;
         justify-content: center;
     }
-    .site {
+    .pet {
         width: 14em;
     }
 }
@@ -72,7 +72,7 @@ html, body {
 */
 
 @media (min-width: 992px) { 
-    .site {
+    .pet {
         margin-left: 3.5em;
         margin-right: 3.5em;
         margin-top: 2.0em;
@@ -91,7 +91,7 @@ html, body {
 }
 
 @media (prefers-color-scheme: dark) {
-    .site {
+    .pet {
         box-shadow: 0 1rem 3rem rgba(255,255,255,.11);
     }
 
@@ -99,15 +99,15 @@ html, body {
 
 @media (hover) {
  
-    .site:hover {
+    .pet:hover {
         box-shadow: 0 1rem 3rem rgba(81,43,212,1.0);
     }
 
-    .site img {
-        filter: grayscale(100%);
+    .pet img {
+        filter: grayscale(50%);
     }
     
-        .site:hover img {
+        .pet:hover img {
             filter: unset;
         }    
 }

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pets of .NET</title>
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="stylesheet" media="(prefers-color-scheme: light)" href="css/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" media="(prefers-color-scheme: dark)" href="css/forevolve/bootstrap-dark/dist/css/bootstrap-dark.min.css" />
+    <link href="css/site.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dotnet">
+        <a class="navbar-brand" href="/">Pets of .NET</a>
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="https://github.com/chsienki/petsof.net">
+                    <span class="oi oi-code pr-1"></span> Source
+                </a>
+            </li>
+        </ul>
+    </nav>
+    
+    <main class="container-fluid mt-3">
+
+        <div class="card-container">
+            {{#pets}}
+            <div class="card pet">
+                <img class="m-3 card-img-top" src="{{img}}" alt="Picture of {{name}}">
+                <div class="card-body">
+                    <h5 class="card-title">{{name}}</h5>
+                    <p class="card-text">{{jobTitle}}</p>
+                    <!-- <a href="https://dot.net" class="btn btn-primary stretched-link">Visit</a> -->
+                </div>
+            </div>
+            {{/pets}}
+        </div>
+    </main>
+</body>
+</html>
