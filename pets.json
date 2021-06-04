@@ -60,7 +60,42 @@
     "twitter": "jsalem206"
   },
   {
-    "name": "Oliver",
+    "name": "Rayas",
+    "jobTitle": "QA Engineer",
+    "img": "https://bl3301files.storage.live.com/y4mtkO6Os641-U_BBbzI6R_LNy3SS0AqgFfq_3G5WToyqeVlmParEZ0VB2EJnAooqvbqU2NUgJ-9qUThG0YlQsPfOeF-OyaDmu0Q2IB9OKQUCEGz4Kz1CdYNiuj-qmdr46nP44Olr5EqMdq8phWCs6QuqfcCw45Cz8K19GJ2ztVkdsbWgrJ1TZUEuw899SG95Ks?width=548&height=660&cropmode=none",
+    "description": "",
+    "caregiver": "David Triana",
+    "github": "dtriana",
+    "twitter": "dtriana76"
+  },
+  {
+    "name": "Luna",
+    "jobTitle": "SecDevOps Engineer",
+    "img": "https://bl3301files.storage.live.com/y4mG2wuQefLzqtAfwmxRi4fX6IU6AXA95kE17vTXunDG9IsgdLOhhbevDYPa6NwmjdVlfftBX9OCHimVWZKq6ifoYCTdqCx5Kq6pUOWakJBtdCmCXl_PZKtZ1N21NIoA4nlVA8uU6xHIF9PTnvW3jAiQTvqk3sRztJ1fonwkcj_TYiJbY8hbjIGHpbF4nBJKgjs?width=495&height=660&cropmode=none",
+    "description": "",
+    "caregiver": "David Triana",
+    "github": "dtriana",
+    "twitter": "dtriana76"
+  },
+  {
+    "name": "Happy",
+    "jobTitle": "Senior SDE",
+    "img": "https://bl3301files.storage.live.com/y4mYZSxE2g23foRh93tq8RoWI5unCniGu7kDr8uWSUJb4EHtCN-Wtok5WCLjHuWYHu6EkMYpH3wt-2Vfe21pmSO0hVktV2MTcpIYPfJnZt1lIeDhhBlcYGYcM0dtRBXjIjiHehdo9AmVFxi1U2SG4EvyU7N2hTkYQVnz3LYJ9usPcaxXN8Y9syrnMj64FvHw0bM?width=617&height=660&cropmode=none",
+    "description": "",
+    "caregiver": "David Triana",
+    "github": "dtriana",
+    "twitter": "dtriana76"
+  },
+  {
+    "name": "Magoo",
+    "jobTitle": "Principal PJM (Retired)",
+    "img": "https://bl3301files.storage.live.com/y4mhZxSkl8n2b9iB8qcL_csRm0e2cIdlhmEp792H3z29kFQTlH66g5IeQQKJ_j1SniWdhdRWUFFCxa7dTUD_F1XNhlIzxmsHYQQfcoLk8ebiyYI_RpRlx_P7BQTQWSoxag59BLe6tsG_qqzSiVeMlxYIXXdOyBx_IEEgHoyPGGjGWRCLFJ5bp89rXmvNvMcLGS-?width=464&height=660&cropmode=none",
+    "description": "",
+    "caregiver": "David Triana",
+    "github": "dtriana",
+    "twitter": "dtriana76"
+  },
+  {"name": "Oliver",
     "jobTitle": "QA Engineer",
     "img": "https://user-images.githubusercontent.com/1142958/120866444-dc2b1580-c587-11eb-983b-bd7c94d402fd.jpeg",
     "description": "",
