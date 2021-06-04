@@ -1,4 +1,5 @@
-# Sites of .NET
+# Pets of .NET
 
-This site simply shows the various sites that are relevant for .NET, some of
-them built by me, some of them are not.
+This site lists the many pets of .NET.
+
+Add your pet by submitting a PR that adds them to pets.json
