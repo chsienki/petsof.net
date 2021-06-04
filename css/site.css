@@ -44,8 +44,7 @@ html, body {
 }
  
 .pet img {
-    width: 65px;
-    height: 65px;
+    max-width: 65px;
 }
 
 .card-body {
@@ -81,8 +80,7 @@ html, body {
     }    
 
     .pet img {
-        width: 190px;
-        height: 190px;
+        max-width: 190px;
     }    
 
     .card-body {
