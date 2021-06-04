@@ -58,5 +58,25 @@
     "github": "josalem",
     "instagram": "j.isforjohn",
     "twitter": "jsalem206"
+  },
+  {
+    "name": "Oliver",
+    "jobTitle": "CTO",
+    "img": "",
+    "description": "",
+    "caregiver": "Ben Adams",
+    "github": "benaadams",
+    "instagram": "",
+    "twitter": "ben_a_adams"
+  },
+  {
+    "name": "Boris",
+    "jobTitle": "CTO",
+    "img": "",
+    "description": "",
+    "caregiver": "Ben Adams",
+    "github": "benaadams",
+    "instagram": "",
+    "twitter": "ben_a_adams"
   }
 ]
