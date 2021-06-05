@@ -143,5 +143,15 @@
     "github": "Pilchie",
     "instagram": "k.pilchie",
     "twitter": "Pilchie"
+  },
+  {
+    "name": "Tobalá",
+    "jobTitle": "Fuzz Tester",
+    "img": "https://user-images.githubusercontent.com/547415/120881555-c49f5d00-c586-11eb-9ed6-faad721d0280.png",
+    "description": "",
+    "caregiver": "Jon Sequeira",
+    "github": "jonsequitur",
+    "instagram": null,
+    "twitter": "jonsequitur"
   }  
 ]
