@@ -143,5 +143,15 @@
     "github": "Pilchie",
     "instagram": "k.pilchie",
     "twitter": "Pilchie"
+  },
+  {
+    "name": "Cashew",
+    "jobTitle": "Server tinkerer",
+    "img": "https://user-images.githubusercontent.com/737941/120877914-eb04ce80-c56d-11eb-9f66-aae5fad2836c.png",
+    "description": "",
+    "caregiver": "Loïc Sharma",
+    "github": "loic-sharma",
+    "instagram": "cashewbuttertonthecorgi",
+    "twitter": "LoicSharma"
   }  
 ]
