@@ -143,5 +143,25 @@
     "github": "Pilchie",
     "instagram": "k.pilchie",
     "twitter": "Pilchie"
-  }  
+  },
+  {
+    "name": "Coco",
+    "jobTitle": "Libraries Engineer",
+    "img": "https://user-images.githubusercontent.com/8918108/121067067-743f1f80-c77f-11eb-82d9-4e0456c04db3.jpg",
+    "description": "",
+    "caregiver": "Eric StJohn",
+    "github": "ericstj",
+    "instagram": "",
+    "twitter": "theesj"
+  },
+  {
+    "name": "Bandit",
+    "jobTitle": "Libraries Engineer",
+    "img": "https://user-images.githubusercontent.com/8918108/121067073-773a1000-c77f-11eb-800b-b2c79393e0c8.jpg",
+    "description": "",
+    "caregiver": "Eric StJohn",
+    "github": "ericstj",
+    "instagram": "",
+    "twitter": "theesj"
+  }
 ]
