@@ -4,9 +4,12 @@ name: CI
 
 # Controls when the action will run. 
 on:
-  # Triggers the workflow on push or pull request events but only for the main branch
+  # Triggers the workflow on push events but only for the main branch
   push:
     branches: [ main ]
+
+  # Triggers the workflow on pull requests
+  pull_request:
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -36,7 +39,8 @@ jobs:
         run: rm src -r
 
       - name: Deploy to Azure Storage
-          # You may pin to the exact commit or the version.
+        if: ${{ github.event_name == 'push' }}
+        # You may pin to the exact commit or the version.
         uses: TravisSpomer/deploy-to-azure-storage@v1.3.0
         with:
           # The location of your built site files. (For example, "out".)
