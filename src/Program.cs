@@ -10,8 +10,11 @@ using Azure.Storage.Blobs;
 using Mustache;
 
 string rootDir = args[0];
-string azureConnection = args[1];
+string azureConnection = Encoding.UTF8.GetString(Convert.FromBase64String(args[1]));
 bool dryRun = args.Length > 2 ? true : false;
+
+
+System.Diagnostics.Debugger.Launch();
 
 var client = new HttpClient();
 var blobContainer = new BlobContainerClient(azureConnection, "img");
@@ -67,7 +70,7 @@ async static Task<Stream> getData(HttpClient client, Pet pet, int retryCountOnFa
             result.EnsureSuccessStatusCode();
             return await result.Content.ReadAsStreamAsync();
         }
-        catch (HttpRequestException e)
+        catch (HttpRequestException)
         {
             // Possible temporarily network error. Keep retry 'retryCountOnFailure' times before throwing.
             if (i == retryCountOnFailure - 1)
