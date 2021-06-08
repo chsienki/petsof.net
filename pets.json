@@ -145,6 +145,56 @@
     "twitter": "Pilchie"
   },
   {
+    "name": "Tobalá",
+    "jobTitle": "Fuzz Tester",
+    "img": "https://user-images.githubusercontent.com/547415/120881555-c49f5d00-c586-11eb-9ed6-faad721d0280.png",
+    "description": "",
+    "caregiver": "Jon Sequeira",
+    "github": "jonsequitur",
+    "instagram": null,
+    "twitter": "jonsequitur"
+  },
+  {
+    "name": "Cashew",
+    "jobTitle": "Server tinkerer",
+    "img": "https://user-images.githubusercontent.com/737941/120877914-eb04ce80-c56d-11eb-9f66-aae5fad2836c.png",
+    "description": "",
+    "caregiver": "Loïc Sharma",
+    "github": "loic-sharma",
+    "instagram": "cashewbuttertonthecorgi",
+    "twitter": "LoicSharma"
+  },
+  {
+    "name": "Grizz and Ella",
+    "jobTitle": "Purr functions consultants",
+    "img": "https://user-images.githubusercontent.com/4665835/120899171-33aa9f00-c5e3-11eb-8656-7cbe9acb79f1.jpg",
+    "description": "",
+    "caregiver": "Cory Nelson",
+    "github": "scalablecory",
+    "instagram": "",
+    "twitter": "scalablecory"
+  },
+  {
+    "name": "Coco",
+    "jobTitle": "Libraries Engineer",
+    "img": "https://user-images.githubusercontent.com/8918108/121067067-743f1f80-c77f-11eb-82d9-4e0456c04db3.jpg",
+    "description": "",
+    "caregiver": "Eric StJohn",
+    "github": "ericstj",
+    "instagram": "",
+    "twitter": "theesj"
+  },
+  {
+    "name": "Bandit",
+    "jobTitle": "Libraries Engineer",
+    "img": "https://user-images.githubusercontent.com/8918108/121067073-773a1000-c77f-11eb-800b-b2c79393e0c8.jpg",
+    "description": "",
+    "caregiver": "Eric StJohn",
+    "github": "ericstj",
+    "instagram": "",
+    "twitter": "theesj"
+  },
+  {
     "name": "Luna",
     "jobTitle": "Softrawr Engineer",
     "img": "https://user-images.githubusercontent.com/3742408/121257111-3805df00-c8a5-11eb-8425-1507f825d04d.jpg",
