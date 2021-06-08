@@ -3,24 +3,39 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Net.Http;
-using System.Text.Json;
+using System.Text;
 using System.Threading.Tasks;
 using Mustache;
 
 string rootDir = args.Length > 0 ? args[0] : "..\\.";
+var client = new HttpClient();
 
 var options = new JsonSerializerOptions() { AllowTrailingCommas = true };
 var petData = JsonSerializer.Deserialize<Pet[]>(File.ReadAllText(Path.Combine(rootDir, "pets.json")), options).OrderBy(p => p.name);
 
-var template = File.ReadAllText(Path.Combine(rootDir, "template.html"));
-var rendered = Template.Compile(template).Render(new { pets = await makeBase64Encoded(petData) });
+var updatedPets = new List<Pet>();
+foreach (var pet in petData)
+{
+    updatedPets.Add(pet with { img = await UploadIfNotExists(pet.img) });
+}
+
+var rendered = Template.Compile(template).Render(new { pets = updatedPets });
 File.WriteAllText(Path.Combine(rootDir, "index.html"), rendered);
 
-async static Task<IEnumerable<Pet>> makeBase64Encoded(IEnumerable<Pet> pets)
+async Task<string> UploadIfNotExists(string url)
 {
-    var client = new HttpClient();
-    var b64Pets = new List<Pet>();
-    foreach (var pet in pets)
+    string b64FileName = Convert.ToBase64String(Encoding.UTF8.GetBytes(url));
+    // if (!blobExists){
+
+    // do conversion and upload
+    // }
+    try
+    {
+        var imgData = await client.GetAsync(url);
+        var resizedImage = await imgData.Content.ReadAsByteArrayAsync();
+        //await putBlobClientAsync(resizedImage);
+    }
+    catch (Exception)
     {
         var imgData = await getData(client, pet, retryCountOnFailure: 3);
         string b64 = Convert.ToBase64String(await imgData.Content.ReadAsByteArrayAsync());
