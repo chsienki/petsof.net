@@ -32,8 +32,12 @@ jobs:
           dotnet-version: '6.0.x'
           include-prerelease: true
 
+      - name: Generate Site (Dry Run)
+        run: dotnet run --project $GITHUB_WORKSPACE/src/SiteBuilder.csproj $GITHUB_WORKSPACE ${{ secrets.IMG_CONNECTION }} true
+
       - name: Generate Site
-        run: dotnet run --project $GITHUB_WORKSPACE/src/SiteBuilder.csproj $GITHUB_WORKSPACE
+        if: ${{ github.event_name == 'push' }}
+        run: dotnet run --project $GITHUB_WORKSPACE/src/SiteBuilder.csproj $GITHUB_WORKSPACE ${{ secrets.IMG_CONNECTION }}
         
       - name: Remove site builder
         run: rm src -r
