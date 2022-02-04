@@ -214,4 +214,24 @@
     "instagram": "",
     "twitter": "eehardt"
   },
+  {
+    "name": "Adolin",
+    "jobTitle": "Compiler Engineer",
+    "img": "https://user-images.githubusercontent.com/2371880/152588838-05a74b99-f49c-428c-8334-0bb17e6e1e43.jpg",
+    "description": "",
+    "caregiver": "Fred Silberberg",
+    "github": "333fred",
+    "instagram": "",
+    "twitter": ""
+  },
+  {
+    "name": "Renarin",
+    "jobTitle": "Compiler Engineer",
+    "img": "https://user-images.githubusercontent.com/2371880/152588830-1faa9d0b-fc57-4399-be6c-48da97d93d3c.jpg",
+    "description": "",
+    "caregiver": "Fred Silberberg",
+    "github": "333fred",
+    "instagram": "",
+    "twitter": ""
+  },
 ]
