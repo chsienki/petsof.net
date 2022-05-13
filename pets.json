@@ -1,5 +1,15 @@
 [
   {
+    "name": "Aloha",
+    "jobTitle": "Maui Developer",
+    "img": "https://raw.githubusercontent.com/DanielCauser/petsof.net/main/img/aloha_the_kitty.jpeg",
+    "description": "",
+    "caregiver": "Daniel Causer",
+    "github": "danielcauser",
+    "instagram": "dcauser",
+    "twitter": "danielcauser"
+  },
+  {
     "name": "Clifford",
     "jobTitle": "Compiler Engineer",
     "img": "https://user-images.githubusercontent.com/16246502/121261719-edb23d00-c867-11eb-8fa5-5bd5dda76313.png",
