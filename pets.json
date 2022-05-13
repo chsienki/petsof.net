@@ -243,5 +243,15 @@
     "github": "maddymontaquila",
     "instagram": "noli.thecannoli",
     "twitter": ""
+  },
+    {
+    "name": "Nova",
+    "jobTitle": "Run Time Engineer",
+    "img": "https://github.com/directhex/petsof.net/blob/main/nova.jpg?raw=true",
+    "description": "",
+    "caregiver": "Jo Shields",
+    "github": "directhex",
+    "instagram": "",
+    "twitter": "directhex"
   }
 ]
