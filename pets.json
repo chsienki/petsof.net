@@ -234,7 +234,7 @@
     "instagram": "",
     "twitter": ""
   },
-    {
+  {
     "name": "Cannoli",
     "jobTitle": "Pawduct Manager",
     "img": "https://user-images.githubusercontent.com/12660687/168335385-fead7f47-12b1-4e2d-b472-a8dacbe45a98.jpg",
@@ -242,6 +242,16 @@
     "caregiver": "Maddy Montaquila",
     "github": "maddymontaquila",
     "instagram": "noli.thecannoli",
+    "twitter": ""
+  },
+  {
+    "name": "Tostas",
+    "jobTitle": "Senior Sleeping Engineer",
+    "img": "https://user-images.githubusercontent.com/1235097/168339258-f15daca0-7127-49d0-95c0-b594608d6cf6.png",
+    "description": "",
+    "caregiver": "Rui Marinho",
+    "github": "rmarinho",
+    "instagram": "o_tostas",
     "twitter": ""
   }
 ]
