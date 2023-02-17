@@ -44,7 +44,8 @@ html, body {
 }
  
 .pet img {
-    max-width: 65px;
+    max-width: 90%;
+    margin: 1rem auto !important;
 }
 
 .card-body {
@@ -63,6 +64,10 @@ html, body {
     }
     .pet {
         width: 14em;
+    }
+
+    .pet img {
+        max-width: 85%;
     }
 }
 
