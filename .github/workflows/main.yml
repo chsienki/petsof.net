@@ -36,14 +36,14 @@ jobs:
         run: dotnet run --project $GITHUB_WORKSPACE/src/SiteBuilder.csproj $GITHUB_WORKSPACE ${{ secrets.IMG_CONNECTION }} true
 
       - name: Generate Site
-        if: ${{ github.event_name == 'push' }}
+        if: ${{ github.event_name == 'push' || github.event_name == 'workflow_dispatch' }}
         run: dotnet run --project $GITHUB_WORKSPACE/src/SiteBuilder.csproj $GITHUB_WORKSPACE ${{ secrets.IMG_CONNECTION }}
         
       - name: Remove site builder
         run: rm src -r
 
       - name: Deploy to Azure Storage
-        if: ${{ github.event_name == 'push' }}
+        if: ${{ github.event_name == 'push' || github.event_name == 'workflow_dispatch' }}
         # You may pin to the exact commit or the version.
         uses: TravisSpomer/deploy-to-azure-storage@v1.3.0
         with:
