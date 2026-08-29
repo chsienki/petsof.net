@@ -1,55 +1,44 @@
-# This is a basic workflow to help you get started with Actions
-
 name: CI
 
-# Controls when the action will run. 
 on:
-  # Triggers the workflow on push events but only for the main branch
   push:
-    branches: [ main ]
-
-  # Triggers the workflow on pull requests
+    branches: [main]
   pull_request:
-
-  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+permissions:
+  contents: read
+
 jobs:
-  # This workflow contains a single job called "build"
   build:
-    # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
-      
-      - name: Setup .NET Core SDK
-        uses: actions/setup-dotnet@v1.8.0
+      - uses: actions/checkout@v4
+
+      - name: Setup .NET SDK
+        uses: actions/setup-dotnet@v4
         with:
-          dotnet-version: '6.0.x'
-          include-prerelease: true
+          dotnet-version: 6.0.x
 
-      - name: Generate Site (Dry Run)
-        run: dotnet run --project $GITHUB_WORKSPACE/src/SiteBuilder.csproj $GITHUB_WORKSPACE ${{ secrets.IMG_CONNECTION }} true
+      - name: Generate site (dry run)
+        run: dotnet run --project "$GITHUB_WORKSPACE/src/SiteBuilder.csproj" "$GITHUB_WORKSPACE" "${{ secrets.IMG_CONNECTION }}" true
 
-      - name: Generate Site
-        if: ${{ github.event_name == 'push' || github.event_name == 'workflow_dispatch' }}
-        run: dotnet run --project $GITHUB_WORKSPACE/src/SiteBuilder.csproj $GITHUB_WORKSPACE ${{ secrets.IMG_CONNECTION }}
-        
-      - name: Remove site builder
-        run: rm src -r
+      - name: Generate site
+        if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
+        run: dotnet run --project "$GITHUB_WORKSPACE/src/SiteBuilder.csproj" "$GITHUB_WORKSPACE" "${{ secrets.IMG_CONNECTION }}"
 
-      - name: Deploy to Azure Storage
-        if: ${{ github.event_name == 'push' || github.event_name == 'workflow_dispatch' }}
-        # You may pin to the exact commit or the version.
-        uses: TravisSpomer/deploy-to-azure-storage@v1.3.0
+      - name: Prepare site
+        if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
+        run: |
+          mkdir publish
+          cp index.html template.html pets.json publish/
+          cp -R css img publish/
+
+      - name: Deploy to Cloudflare Pages
+        if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
+        uses: cloudflare/wrangler-action@v3
         with:
-          # The location of your built site files. (For example, "out".)
-          source-path: .
-          # A SAS URL for your storage account. (You should store this in a Secret.)
-          sas-url: ${{ secrets.STORAGE_SAAS }}
-          # Whether or not old versions of files should be deleted.
-          cleanup: true
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy publish --project-name=petsof-net --commit-dirty=true
